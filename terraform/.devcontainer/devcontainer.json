@@ -1,0 +1,19 @@
+{
+    "name": "Terraform",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "terraform",
+    "workspaceFolder": "/terraform",
+    "settings": {
+        "[terraform]": {
+            "editor.formatOnSave": true
+        }
+    },
+    "extensions": [
+        "vscodevim.vim",
+        "hashicorp.terraform"
+    ]
+    // "forwardPorts": [],
+
+    // Uncomment the next line to run commands after the container is created - for example installing curl.
+    // "postCreateCommand": "apt-get update && apt-get install -y curl",
+}

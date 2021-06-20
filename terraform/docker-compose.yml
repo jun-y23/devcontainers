@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  terraform:
+    image: hashicorp/terraform:1.0.0
+    container_name: terraform
+    tty: true
+    volumes:
+      - ./terraform:/terraform
+      - $HOME/.aws/:/root/.aws/
+    working_dir: /terraform
+    entrypoint: ash
