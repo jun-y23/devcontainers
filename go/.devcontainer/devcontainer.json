@@ -1,0 +1,10 @@
+{
+    "name": "Go",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "app",
+    "workspaceFolder": "/go/src/work",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": ["golang.go"]
+}
